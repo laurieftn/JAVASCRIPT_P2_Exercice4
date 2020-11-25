@@ -1,0 +1,120 @@
+header {
+    background-image: url();
+    background-size: cover;
+    /* width: 100%; */
+    height: 380px;
+    position: relative;
+    /* display: flex; */
+    border: rgb(78, 78, 62) solid 3px;
+    border-radius: 10px;
+
+}
+
+#titre {
+font-family: Georgia, Times, 'Times New Roman',  sans-serif;
+position: absolute;
+top: 25%;
+left: 35%;
+font-size: 60pt;
+color: rgb(78, 78, 62);
+}
+ul {
+display: flex;
+color: rgb(78, 78, 62);
+background-color:  rgb(238, 223, 150);
+border-color: rgb(78, 78, 62);
+border-radius: 10px;
+/* marge interieur */
+padding: 10px;
+border: rgb(78, 78, 62) solid 2px;
+}
+li {
+flex: auto;
+justify-content: center;
+font-family: Georgia, Times, 'Times New Roman', sans-serif;
+font-size: 20pt;   
+}
+/* pour gerer les liens (couleurs,taille... */
+a { 
+color: rgb(78, 78, 62);
+/* retrait du liens sous ligné */
+text-decoration: none;
+font-size: 30px;
+font-size: 20pt;
+}
+
+/* test "d'animation" sur la bar menu */
+li { 
+display: inline-block; 
+}
+li a {  
+color:  rgb(78, 78, 62); 
+} 
+li a:after { 
+content: '';  
+display: block;
+height: 1px;   
+transition: width .5s ease,;
+}
+li a:hover:after {  
+width: 55%;  
+background: rgb(78, 78, 62);
+}
+
+/* pour gerer la recherche forme, police, couleur */
+
+input {
+border-radius: 5PX;
+text-align: center;
+}
+
+/* texte de présentation */
+
+#container1 {
+
+color: rgb(78, 78, 62);
+padding: 50px;
+background-color : rgb(238, 223, 150);
+font-size: 15pt;
+font-family: Georgia, Times, 'Times New Roman', sans-serif;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+text-align: center;
+border: rgb(78, 78, 62) solid 2px;
+}
+
+/*  bloc prend en compte les les 3 images 3 titres 3 textes */
+
+#bloc {
+display: flex;
+flex-direction: row;
+text-align: center;
+font-family:  Georgia, Times, 'Times New Roman', sans-serif;
+color: rgb(78, 78, 62);
+margin: 20px;
+
+}
+h2 {
+font-weight: bold;
+font-size: 20pt;
+}
+img {
+width: 400PX;
+border-radius: 10px;
+border: rgb(78, 78, 62) solid 2px;   
+}
+
+#burger {
+display: none;
+}
+
+#bloc{
+    visibility: hidden;
+   
+}
+
+#bloc.scroll{
+    visibility: visible;
+
+}
